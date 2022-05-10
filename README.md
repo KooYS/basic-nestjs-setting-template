@@ -20,8 +20,8 @@
 ### Install
 
 ```
-npm i -g typeorm-model-generator
-yarn add typeorm-model-generator
+npm i -D typeorm-model-generator
+yarn add -D typeorm-model-generator
 ```
 
 ### Command
@@ -42,11 +42,13 @@ command is as follows.
 -e : engine (mssql, postgres, mysql, mariadb, oracle, sqlite)
 
 -o : folder path to create file
+
+--namingStrategy : NamingStrategy
 ```
 
 ### Example
 
 ```
-typeorm-model-generator -h server_ip -d database_name -p server_port -u server_id -x server_pw -e db_engine -o entity_folder_path
+typeorm-model-generator -h server_ip -d database_name -p server_port -u server_id -x server_pw -e db_engine -o entity_folder_path --namingStrategy=NamingStrategy.js --case-file none
 
 ```
