@@ -13,7 +13,7 @@
 
 # Command
 
--   npm run start:{ local | dev | prod }
+-   yarn run start:{ local | dev | prod }
 
 # Convert an already created table into entity code
 
